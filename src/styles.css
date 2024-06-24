@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100vh;}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  background-color: rgb(68, 68, 68);
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(238, 238, 238, 0.1);
+  border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}

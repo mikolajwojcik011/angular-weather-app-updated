@@ -1,0 +1,9 @@
+<div class="main-wraper">
+  <div class="card-box add">
+    <app-add-card (click)="hideCard($event)"></app-add-card>
+    <app-form-card (hide)="hideCard($event)" [ngClass]="{'hide': hide}"></app-form-card>
+  </div>
+  <div class="card-box"  *ngFor="let data of forecastArray$ | async">
+    <app-card [data]="data"></app-card>
+  </div>
+</div>

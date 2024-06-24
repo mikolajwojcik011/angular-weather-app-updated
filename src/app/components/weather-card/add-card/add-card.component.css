@@ -1,0 +1,26 @@
+.card-wraper{
+  width: 350px;
+  height: 750px;
+  border-radius: 40px;
+  background-color: #eeeeee;
+  box-shadow: 0px 0px 50px -5px #313131;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-icon{
+  font-size: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgba(68, 68, 68, 0.8);
+  transition: 0.1s ease-in;
+}
+
+mat-icon:hover{
+  color: rgba(6, 128, 93, 1);
+}

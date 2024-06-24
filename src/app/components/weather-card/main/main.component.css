@@ -1,0 +1,41 @@
+.main-wraper{
+  min-width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+app-form-card{
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  transition: transform 0.3s, z-index 0.3s, opacity 0.1s;
+}
+
+.hide{
+  display: block;
+  opacity: 0%;
+  z-index: -1;
+  transform: translateY(200px);
+  height: 750px;
+}
+
+.card-box{
+  height: 820px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+
+.add{
+  position: relative;
+}
+
+

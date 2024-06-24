@@ -1,0 +1,12 @@
+<div class="card-wraper"
+     [ngClass]="stylist()" *ngIf="data | json">
+  <h2 class="header-info">September 29 , wed <br>{{data.name}}</h2>
+  <h1 class="header-weather">{{data.weather[0].description}}</h1>
+  <div class="img-box">
+    <img class="img" [src]="imagePicker()" alt="{{data.weather[0].description}}">
+  </div>
+  <div class="divider"></div>
+  <div class="data-weather">
+    <h1 class="data-weather-h">Temperature {{data.main.temp}}°C <br>Humidity {{data.main.humidity}}% <br>Wind {{data.wind.speed}}km/h</h1>
+  </div>
+</div>
