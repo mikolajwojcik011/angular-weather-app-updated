@@ -1,0 +1,24 @@
+<div class="card-wraper">
+  <mat-icon (click)="hideCard()">chevron_right</mat-icon>
+  <div class="form-box">
+    <form>
+<!--      <input formControlName="q" type="text">-->
+      <mat-form-field appearance="fill">
+        <mat-label>States Group</mat-label>
+        <input type="text"
+               matInput
+               [formControl]="city"
+               required
+               [matAutocomplete]="autoGroup">
+        <mat-autocomplete #autoGroup="matAutocomplete">
+          <mat-optgroup *ngFor="let city of filteredCities">
+            <mat-option>
+              {{city.name}}
+            </mat-option>
+          </mat-optgroup>
+        </mat-autocomplete>
+      </mat-form-field>
+      <button (click)="sendFromData()">Search</button>
+    </form>
+  </div>
+</div>
